@@ -243,3 +243,25 @@ main {
     right: 10px; /* Distance from the right */
     pointer-events: none; /* Prevents the arrow from interfering with clicks */
 }
+
+
+/* Main Section Styles */
+.service-cards {
+    display: flex; /* Flexbox for service cards */
+    justify-content: space-around; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .service-cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+    }
+
+    .card {
+        width: 90%; /* Set card width to 90% of the container */
+        max-width: none; /* Remove the maximum width restriction */
+        margin: 10px 0; /* Add margin for spacing between cards */
+    }
+}
