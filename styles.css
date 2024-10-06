@@ -1,0 +1,245 @@
+/* General Styles */
+* {
+    margin: 0; /* Remove margin from all elements */
+    padding: 0; /* Remove padding from all elements */
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+/* Header and Navbar Styles */
+.header {
+    position: relative; /* Add position relative for absolute positioning of slides */
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* Prevent overflow of slides */
+}
+
+.navbar {
+    position: fixed; /* Fix navbar at the top */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    padding: 15px 20px; /* Add padding */
+    background-color: rgba(0, 128, 0, 0.9); /* Green transparent background */
+    z-index: 1000; /* Ensure navbar is above other elements */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar a.logo {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+.navbar ul {
+    display: flex; /* Flex display for horizontal menu */
+    list-style-type: none;
+}
+
+.navbar li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Slider Styles */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=') no-repeat center center/cover;
+    opacity: 0.6; /* Reduce opacity */
+    animation: slide-animation 5s infinite; /* Add sliding animation */
+}
+
+.slide:nth-child(2) {
+    background: url('https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=') no-repeat center center/cover;
+    animation-delay: 10s;
+}
+
+.slide:nth-child(3) {
+    background: url('https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=') no-repeat center center/cover;
+    animation-delay: 15s;
+}
+
+@keyframes slide-animation {
+    0%, 33% { opacity: 0.6; }
+    34%, 66% { opacity: 0; }
+    67%, 100% { opacity: 0.6; }
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px; /* Adjust if needed */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    /*text-shadow: 2px 2px 5px #000000;*/
+    color: #000000; /* Eye-catching color for the title */
+    opacity: 90%; /* Set opacity to 100% */
+}
+
+/* Button Styles */
+.btn-primary {
+    color: rgb(0, 0, 0); /* Button text color */
+    font-size: 1.5rem; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    text-decoration: none; /* Remove underline */
+    
+}
+
+.btn-primary:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+.intro,
+.nasa-content,
+.gallery,
+.contact {
+    margin: 40px 0; /* Add margin between sections */
+    padding: 20px; /* Add padding inside sections */
+    background: white; /* White background for sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.intro h2,
+.nasa-content h2,
+.gallery h2,
+.contact h2 {
+    margin-bottom: 20px; /* Space below headings */
+    color: #333; /* Dark color for headings */
+}
+
+.service-cards {
+    display: flex; /* Flexbox for service cards */
+    justify-content: space-around; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+}
+
+.card {
+    background: #f9f9f9; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px; /* Space between cards */
+    overflow: hidden; /* Hide overflow */
+    width: 30%; /* Width of each card */
+    max-width: 300px; /* Maximum width for cards */
+}
+
+.card img {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Fixed height for images to maintain equal box size */
+    object-fit: cover; /* Maintain aspect ratio while covering */
+}
+
+.card h3 {
+    font-size: 1.5rem; /* Heading size */
+    margin: 10px 0; /* Space above and below */
+}
+
+.card p {
+    padding: 0 10px 10px; /* Padding for text */
+}
+
+/* Gallery Styles */
+/* Gallery Styles */
+.gallery-grid {
+    display: grid; /* Use grid layout for gallery */
+    grid-template-columns: repeat(3, 1fr); /* Set three equal columns */
+    gap: 10px; /* Space between grid items */
+}
+
+.gallery img {
+    width: 100%; /* Full width for images */
+    height: 200px; /* Fixed height for images to maintain equal box size */
+    object-fit: cover; /* Maintain aspect ratio while covering */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+
+/* Contact Form Styles */
+.contact form {
+    display: flex; /* Flex layout for form */
+    flex-direction: column; /* Column layout */
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.contact button {
+    padding: 10px; /* Padding inside button */
+    background: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background 0.3s; /* Smooth transition */
+}
+
+.contact button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background: rgba(0, 128, 0, 0.9); /* Green background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding inside footer */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
+
+#data-selector {
+    appearance: none; /* Removes default styling */
+    background: transparent; /* Makes the background transparent */
+    border: none; /* Optional: removes the border */
+    color: inherit; /* Ensures the text color matches the surrounding text */
+    padding: 5px; /* Adjust padding */
+    font-size: inherit; /* Ensures the font size matches the surrounding text */
+    cursor: pointer; /* Changes the cursor to pointer for better UX */
+}
+
+/* Optional: Add a custom arrow */
+#data-selector::after {
+    content: '▼'; /* Custom arrow symbol */
+    position: absolute; /* Positions the arrow */
+    right: 10px; /* Distance from the right */
+    pointer-events: none; /* Prevents the arrow from interfering with clicks */
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmSmart - Empowering Maharashtra Farmers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fas fa-tractor"></i> AgroHealth</a>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#" id="contact-btn">Get in Touch</a></li>
+                
+                <li >
+                    <select id="data-selector">
+                        <option value="" disabled selected>Find Data</option>
+                        <option value="https://www.earthdata.nasa.gov/learn/pathfinders/agricultural-and-water-resources-data-pathfinder" style="background-color: rgb(0, 0, 0);">Agriculture and Water Management Data </option>
+                        <option value="https://www.earthdata.nasa.gov/learn/pathfinders/disasters/floods-data-pathfinder" style="background-color: rgb(0, 0, 0);">Floods Data</option>
+                        <option value="https://www.earthdata.nasa.gov/learn/pathfinders/disasters/extreme-heat-data-pathfinder/find-data#temperature" style="background-color: rgb(0, 0, 0);">Extreme Heat Data</option>
+                        <option value="https://www.nasaharvest.org/" style="background-color: rgb(0, 0, 0);">Nasa Harvest</option>
+                    </select>
+                </li>
+            </ul>
+            
+            <script>
+                document.getElementById('data-selector').addEventListener('change', function () {
+                    const url = this.value;
+                    if (url) {
+                        window.open(url, '_blank'); // Open selected URL in a new tab
+                    }
+                });
+            </script>
+            
+        </nav>
+        <div class="hero">
+            <div class="hero-slider">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            <h1>Empowering Farmers</h1>
+            
+            <a href="#services" class="btn btn-primary">Using NASA’s advanced satellite data</a>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="intro" id="home">
+            <h2>About AgroHealth</h2>
+            <p style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: 18px;"><b>AgroHealth</b> provides access to NASA and space agency data for the farmers, helping them with modern agricultural solutions such as drought management, irrigation, and crop health monitoring. Our goal is to empower local farmers with tools to make informed decisions for better productivity.</p><br>
+           <b><ul style="margin-left: 50px;;">
+                <li>Irrigation Scheduling</li>
+                <li>Water Forecast</li>
+                <li>Crop Health Monitoring</li>
+            </ul></b>
+        </section>
+
+        <section class="nasa-content" id="services">
+            <h2>Services Offered By AgroHealth </h2>
+            <p>We offer a variety of services including irrigation scheduling, real-time weather alerts, and crop health <b>(Monitoring using NASA’s advanced satellite data)</b>, specifically designed for fulfill a farming needs for farmers.</p>
+
+            <div class="service-cards">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/hightech-irrigation-scheduling-software-wallpaper_987764-37555.jpg?w=826" alt="Irrigation" />
+                    <h3>Irrigation Scheduling</h3>
+                    <p>Optimize your water usage by accessing NASA’s soil moisture data, perfect for Maharashtra’s dry seasons.</p>
+                </div>
+                <div class="card">
+                    <img src="https://media.istockphoto.com/id/2060491755/photo/sky-landscapes-collage-weather-forecast-global-warming-climate-change-support-environmental.jpg?s=612x612&w=0&k=20&c=gcmsZkYTBo6ukommMJ-2Qf3q5fElIPFcZ7EoNsSxP7k=" alt="Weather" />
+                    <h3>Weather Forecast</h3>
+                    <p>Receive real-time weather updates and early flood warnings to prevent crop damage.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/medium-shot-agronomists-taking-picture-strawberry-with-digital-tablet_1098-19397.jpg?w=740&t=st=1728196702~exp=1728197302~hmac=cdb7517947dfe27a8c8e0353d478b23d61efc9b07492f9e8cc4c251a75c0515b" alt="Crop Monitoring" />
+                    <h3>Crop Health Monitoring</h3>
+                    <p>Utilize satellite imagery to monitor crop health and make data-driven decisions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2>AgroHealth Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://media.istockphoto.com/id/1382273499/photo/agriculture-robotic-and-autonomous-car-working-in-smart-farm-future-5g-technology-with-smart.jpg?s=612x612&w=0&k=20&c=NaZ1ef7bXhv-4tG5RmM6zLB30UXoDLFiJd5upMphmPs=" alt="Farm Image 1">
+                <img src="https://media.istockphoto.com/id/1300746302/photo/agriculture-and-technology-agritech-environment-communication-network.jpg?s=612x612&w=0&k=20&c=2Qmor7XbjL3kXbvSkXw0BqFkN-7qeJ7CbyhJ9YxpTtU=" alt="Farm Image 2">
+                <img src="https://media.istockphoto.com/id/1254095794/photo/modern-smart-farming-agriculture-technology-at-farm.jpg?s=612x612&w=0&k=20&c=VOYZ3xB7DJLao8C7fKH4qvRxQHeVQZ3WOUS-wXUoXik=" alt="Farm Image 3">
+                <img src="https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=" alt="Farm Image 4">
+                <img src="https://plus.unsplash.com/premium_photo-1682092640390-986e05bcbb5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWFuJTIwZmFybWVyfGVufDB8fDB8fHww" alt="Farm Image 5">
+                <img src="https://media.istockphoto.com/id/1429073633/photo/maize-seedling-in-cultivated-agricultural-field-with-graphic-concepts-modern-agricultural.jpg?s=612x612&w=0&k=20&c=eOykLrmibVP-GPQo5Mf4BgTt90Sf5U5m7O7hLxB5Rww=" alt="Farm Image 6">
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 AgroHealth. By Shivtej & Akash.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-btn').addEventListener('click', function () {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
