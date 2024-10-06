@@ -72,17 +72,17 @@ body {
     height: 100%;
     background: url('https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=') no-repeat center center/cover;
     opacity: 0.6; /* Reduce opacity */
-    animation: slide-animation 5s infinite; /* Add sliding animation */
+    animation: slide-animation 15s infinite; /* Add sliding animation */
 }
 
 .slide:nth-child(2) {
     background: url('https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=') no-repeat center center/cover;
-    animation-delay: 10s;
+    animation-delay: 5s;
 }
 
 .slide:nth-child(3) {
     background: url('https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=') no-repeat center center/cover;
-    animation-delay: 15s;
+    animation-delay: 10s;
 }
 
 @keyframes slide-animation {
