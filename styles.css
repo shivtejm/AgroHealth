@@ -1,7 +1,7 @@
-/* General Styles */
+
 * {
-    margin: 0; /* Remove margin from all elements */
-    padding: 0; /* Remove padding from all elements */
+    margin: 0; 
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
@@ -12,7 +12,7 @@ body {
 
 /* Header and Navbar Styles */
 .header {
-    position: relative; /* Add position relative for absolute positioning of slides */
+    position: relative;
     height: 100vh;
     color: white;
     display: flex;
@@ -22,30 +22,30 @@ body {
 }
 
 .navbar {
-    position: fixed; /* Fix navbar at the top */
-    top: 0; /* Align to top */
-    left: 0; /* Align to left */
-    width: 100%; /* Full width */
-    padding: 15px 20px; /* Add padding */
-    background-color: rgba(0, 128, 0, 0.9); /* Green transparent background */
-    z-index: 1000; /* Ensure navbar is above other elements */
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    padding: 15px 20px; 
+    background-color: rgba(0, 128, 0, 0.9); 
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
 }
 
 .navbar a.logo {
     color: white;
     font-size: 1.8rem;
-    margin-right: 20px; /* Space between logo and menu */
+    margin-right: 20px;
 }
 
 .navbar ul {
-    display: flex; /* Flex display for horizontal menu */
+    display: flex;
     list-style-type: none;
 }
 
 .navbar li {
-    margin-left: 20px; /* Space between menu items */
+    margin-left: 20px; 
 }
 
 .navbar a {
@@ -54,7 +54,7 @@ body {
     font-weight: bold;
 }
 
-/* Hero Slider Styles */
+
 .hero-slider {
     position: absolute;
     top: 0;
@@ -71,8 +71,8 @@ body {
     width: 100%;
     height: 100%;
     background: url('https://media.istockphoto.com/id/1475621029/photo/smart-agriculture-drone-assisted-crop-irrigation.jpg?s=612x612&w=0&k=20&c=CBzx5-HmN3eXEpmsQZ2L3DpN_56acbYB-TNs86P349w=') no-repeat center center/cover;
-    opacity: 0.6; /* Reduce opacity */
-    animation: slide-animation 15s infinite; /* Add sliding animation */
+    opacity: 0.6; 
+    animation: slide-animation 15s infinite;
 }
 
 .slide:nth-child(2) {
@@ -93,27 +93,27 @@ body {
 
 .hero {
     text-align: center;
-    margin-top: 100px; /* Adjust if needed */
+    margin-top: 100px; 
 }
 
 .hero h1 {
     font-size: 3.5rem;
     /*text-shadow: 2px 2px 5px #000000;*/
-    color: #000000; /* Eye-catching color for the title */
-    opacity: 90%; /* Set opacity to 100% */
+    color: #000000; 
+    opacity: 90%; 
 }
 
-/* Button Styles */
+
 .btn-primary {
-    color: rgb(0, 0, 0); /* Button text color */
-    font-size: 1.5rem; /* Font size */
-    cursor: pointer; /* Change cursor on hover */
-    text-decoration: none; /* Remove underline */
+    color: rgb(0, 0, 0); 
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    text-decoration: none; 
     
 }
 
 .btn-primary:hover {
-    background: #218838; /* Darker green on hover */
+    background: #218838; 
 }
 
 /* Main Section Styles */
@@ -125,143 +125,140 @@ main {
 .nasa-content,
 .gallery,
 .contact {
-    margin: 40px 0; /* Add margin between sections */
-    padding: 20px; /* Add padding inside sections */
-    background: white; /* White background for sections */
-    border-radius: 10px; /* Rounded corners for sections */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 40px 0;
+    padding: 20px; 
+    background: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .intro h2,
 .nasa-content h2,
 .gallery h2,
 .contact h2 {
-    margin-bottom: 20px; /* Space below headings */
-    color: #333; /* Dark color for headings */
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .service-cards {
-    display: flex; /* Flexbox for service cards */
-    justify-content: space-around; /* Space between cards */
-    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card {
-    background: #f9f9f9; /* Card background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 10px; /* Space between cards */
-    overflow: hidden; /* Hide overflow */
-    width: 30%; /* Width of each card */
-    max-width: 300px; /* Maximum width for cards */
+    background: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 10px;
+    overflow: hidden; 
+    width: 30%; 
+    max-width: 300px; 
 }
 
 .card img {
-    width: 100%; /* Full width of the card */
-    height: 200px; /* Fixed height for images to maintain equal box size */
-    object-fit: cover; /* Maintain aspect ratio while covering */
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
 }
 
 .card h3 {
-    font-size: 1.5rem; /* Heading size */
-    margin: 10px 0; /* Space above and below */
+    font-size: 1.5rem;
+    margin: 10px 0; 
 }
 
 .card p {
-    padding: 0 10px 10px; /* Padding for text */
+    padding: 0 10px 10px; 
 }
 
-/* Gallery Styles */
-/* Gallery Styles */
+
 .gallery-grid {
-    display: grid; /* Use grid layout for gallery */
-    grid-template-columns: repeat(3, 1fr); /* Set three equal columns */
-    gap: 10px; /* Space between grid items */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .gallery img {
-    width: 100%; /* Full width for images */
-    height: 200px; /* Fixed height for images to maintain equal box size */
-    object-fit: cover; /* Maintain aspect ratio while covering */
-    border-radius: 5px; /* Rounded corners for images */
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 5px; 
 }
 
 
 /* Contact Form Styles */
 .contact form {
-    display: flex; /* Flex layout for form */
-    flex-direction: column; /* Column layout */
+    display: flex;
+    flex-direction: column; 
 }
 
 .contact input,
 .contact textarea {
-    padding: 10px; /* Padding inside inputs */
-    margin: 10px 0; /* Space between inputs */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
+    padding: 10px; 
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
 }
 
 .contact button {
-    padding: 10px; /* Padding inside button */
-    background: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background 0.3s; /* Smooth transition */
+    padding: 10px;
+    background: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background 0.3s; 
 }
 
 .contact button:hover {
-    background: #0056b3; /* Darker blue on hover */
+    background: #0056b3; 
 }
 
 /* Footer Styles */
 .footer {
-    background: rgba(0, 128, 0, 0.9); /* Green background for footer */
-    color: white; /* White text color */
-    text-align: center; /* Center text */
-    padding: 10px 0; /* Padding inside footer */
-    position: relative; /* Positioning for footer */
-    bottom: 0; /* Align to bottom */
-    width: 100%; /* Full width */
+    background: rgba(0, 128, 0, 0.9); 
+    color: white;
+    text-align: center; 
+    padding: 10px 0; 
+    position: relative;
+    bottom: 0; 
+    width: 100%; 
 }
 
 #data-selector {
-    appearance: none; /* Removes default styling */
-    background: transparent; /* Makes the background transparent */
-    border: none; /* Optional: removes the border */
-    color: inherit; /* Ensures the text color matches the surrounding text */
-    padding: 5px; /* Adjust padding */
-    font-size: inherit; /* Ensures the font size matches the surrounding text */
-    cursor: pointer; /* Changes the cursor to pointer for better UX */
-}
+    appearance: none; 
+    background: transparent;
+    border: none; 
+    color: inherit; 
+    padding: 5px; 
+    font-size: inherit; 
+    cursor: pointer; 
 
-/* Optional: Add a custom arrow */
 #data-selector::after {
-    content: '▼'; /* Custom arrow symbol */
-    position: absolute; /* Positions the arrow */
-    right: 10px; /* Distance from the right */
-    pointer-events: none; /* Prevents the arrow from interfering with clicks */
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    pointer-events: none; 
 }
 
 
 /* Main Section Styles */
 .service-cards {
-    display: flex; /* Flexbox for service cards */
-    justify-content: space-around; /* Space between cards */
-    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) { /* Adjust the max-width as needed */
+
+@media (max-width: 768px) {
     .service-cards {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center align cards */
+        flex-direction: column;
+        align-items: center;
     }
 
     .card {
-        width: 90%; /* Set card width to 90% of the container */
-        max-width: none; /* Remove the maximum width restriction */
-        margin: 10px 0; /* Add margin for spacing between cards */
+        width: 90%;
+        max-width: none; 
+        margin: 10px 0; 
     }
 }
